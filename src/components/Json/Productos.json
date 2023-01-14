@@ -1,0 +1,148 @@
+[
+        
+    {   
+        "id": 1,
+        "nombre": "Remera blanca",
+        "precio": 2225, 
+        "stock":30, 
+        "categoria": "blanco", 
+        "cantidad": 1, 
+        "desc": 25, 
+        "img": "https://i.pinimg.com/564x/43/7a/01/437a01b5fc21af900087d7871d693054.jpg",
+        "imgTienda": "../img/RemeraBlancaFeliz.jpg"
+            
+    },
+
+    {   
+        "id": 2, 
+        "nombre": "Remera negra", 
+        "precio": 2225, 
+        "stock":30, 
+        "categoria": "negro", 
+        "cantidad": 1, 
+        "desc": 25, 
+        "img": "https://i.pinimg.com/564x/cb/ef/8b/cbef8ba4aff842acd44460f975a038c6.jpg", 
+        "imgTienda": "../img/RemeraNegraGato.jpg"
+
+    },
+
+    {   
+        "id": 3, 
+        "nombre": "Remera beige",  
+        "precio": 2225, 
+        "stock":30, 
+        "categoria": "beige", 
+        "cantidad": 1, 
+        "desc": 25, 
+        "img": "https://i.pinimg.com/564x/82/de/39/82de396c85ee77fdd4d3f06158c1ccc5.jpg", 
+        "imgTienda": "../img/RemeraBeige.jpg"
+    },
+
+    {   
+        "id": 4, 
+        "nombre": "Remera negra", 
+        "precio": 3000, 
+        "stock":30, 
+        "categoria": "negro", 
+        "cantidad": 1, 
+        "desc": 0, 
+        "img": "https://i.pinimg.com/564x/09/82/de/0982dedbfaa609132c854fdc033a8cd7.jpg", 
+        "imgTienda": "../img/RemeraNegraRostro.jpg"
+    },
+
+    {   
+        "id": 5, 
+        "nombre": "Remera azul", 
+        "precio": 3000, 
+        "stock":30, 
+        "categoria": "azul", 
+        "cantidad": 1, 
+        "desc": 0, 
+        "img": "https://i.pinimg.com/564x/c8/73/be/c873becc853e5eff97c4d87d48e180fe.jpg", 
+        "imgTienda": "../img/RemeraAzulPetroleo.jpg"
+    },
+
+    {   
+        "id": 6, 
+        "nombre": "Remera celeste", 
+        "precio": 3000, 
+        "stock":30, 
+        "categoria": "celeste", 
+        "cantidad": 1, 
+        "desc": 0, 
+        "img": "https://i.pinimg.com/564x/e3/e7/d1/e3e7d1c064d5209d6049f74984ca53ba.jpg", 
+        "imgTienda": "../img/RemeraCeleste.jpg"
+    },
+
+    {   
+        "id": 7,
+        "nombre": "Remera verde",  
+        "precio": 3000, 
+        "stock":30, 
+        "categoria": "verde", 
+        "cantidad": 1, 
+        "desc": 0, 
+        "img": "https://i.pinimg.com/564x/4e/4e/32/4e4e321ed4c275d712666420c9e77313.jpg", 
+        "imgTienda": "../img/RemeraCremaHongo.jpg"
+    },
+
+    {   
+        "id": 8, 
+        "nombre": "Remera gris", 
+        "precio": 3000, 
+        "stock":30, 
+        "categoria": "gris", 
+        "cantidad": 1, 
+        "desc": 0, 
+        "img": "https://i.pinimg.com/564x/74/27/30/74273062bfc44b8bcd3e4816d5df79be.jpg", 
+        "imgTienda": "../img/RemeraGris.jpg"
+    },
+
+    {   
+        "id": 9, 
+        "nombre": "Remera bordo", 
+        "precio": 3000, 
+        "stock":30, 
+        "categoria": "bordo", 
+        "cantidad": 1, 
+        "desc": 0, 
+        "img": "https://i.pinimg.com/564x/fa/bc/c8/fabcc823dcdefc03c3ca0c03d7e3ac1d.jpg", 
+        "imgTienda": "../img/RemeraBordo.jpg"
+    },
+
+    {   
+        "id": 10, 
+        "nombre": "Remera marron", 
+        "precio": 3000, 
+        "stock":30, 
+        "categoria": "marron", 
+        "cantidad": 1, 
+        "desc": 0, 
+        "img": "https://i.pinimg.com/564x/eb/f8/71/ebf871b63e8038142c308bda0ab76145.jpg", 
+        "imgTienda": "../img/RemeraMarron.jpg"
+    },
+
+    {   
+        "id": 11, 
+        "nombre": "Remera naranja", 
+        "precio": 3000, 
+        "stock":30, 
+        "categoria": "naranja", 
+        "cantidad": 1, 
+        "desc": 0, 
+        "img": "https://i.pinimg.com/564x/24/10/6d/24106d432a85f1d70aca575f317d4128.jpg", 
+        "imgTienda": "../img/RemeraNaranja.jpg"
+    },
+
+    {   
+        "id": 12, 
+        "nombre": "Remera amarilla", 
+        "precio": 3000, 
+        "stock":30, 
+        "categoria": "amarilla", 
+        "cantidad": 1, 
+        "desc": 0, 
+        "img": "https://i.pinimg.com/564x/ec/9b/09/ec9b090a815c8f85cef3e6f5391f8a1c.jpg", 
+        "imgTienda": "../img/RemeraAmarilla.jpg"
+    }
+]
