@@ -23,6 +23,7 @@ const ItemCount = ({stock, onAdd}) => {
         setItemStock(itemStock - quantity)
         setCounter(1)
         setVendido(true)
+        onAdd(quantity)
     }
 
     useEffect(() => {

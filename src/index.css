@@ -657,4 +657,5 @@ footer .logoWspFlotante .iconoFlotante {
 
 .btn {
   --bs-btn-hover-border-color: none;
+  --bs-btn-border-color: none;
 }
