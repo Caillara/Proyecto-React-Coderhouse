@@ -1,34 +1,33 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-const ItemCount = ({stock, onAdd}) => {
-    const[counter, setCounter] = useState(1);
-    const[itemStock, setItemStock] = useState(stock);
-    const [vendido, setVendido] = useState(false)
-
-    const sumarStock = () => {
-        if (counter < itemStock) {
-            setCounter(counter + 1);
+    
+    const ItemCount = ({initial, stock, onAdd}) => {
+        const[counter, setCounter] = useState(parseInt(initial));
+        const [vendido, setVendido] = useState(false)
+    
+        const sumarStock = () => {
+            if (counter < stock) {
+                setCounter(counter + 1);
+            }
         }
-    }
-
-    const restarStock = () => {
-        if (counter > 1) {
-            setCounter(counter - 1);
+    
+        const restarStock = () => {
+            if (counter > 1) {
+                setCounter(counter - 1);
+            }
         }
-    }
+    
+        const addToCart = (quantity) => {
+            setVendido(true)
+            setCounter(1)
+            
+            onAdd(quantity)
+        }
+    
+        useEffect(() => {
+            setCounter(parseInt(initial))
+        }, [initial])
 
-    const addToCart = (quantity) => {
-        setItemStock(itemStock - quantity)
-        setCounter(1)
-        setVendido(true)
-        onAdd(quantity)
-    }
-
-    useEffect(() => {
-        setItemStock(stock)
-    }, [stock])
 
     return (
         <div className="container text-center"> 
@@ -43,7 +42,7 @@ const ItemCount = ({stock, onAdd}) => {
             </div>
             <div className="row">
                 <div className="col-md-12">
-                    {vendido ? <Link to={"/cart"} className="btn btn-dark">Terminar Compra</Link> :<button type="button" className="btn btn-primary" onClick={() => {addToCart(counter)}}>Agregar al carrito</button>}
+                {vendido ? <Link to={"/cart"} className="btn btn-dark">Terminar Compra</Link> : <button type="button" className="btn btn-primary" onClick={() => {addToCart(counter)}}>Agregar al carrito</button>}
                 </div>
             </div>
         </div>
@@ -51,3 +50,4 @@ const ItemCount = ({stock, onAdd}) => {
 }
 
 export default ItemCount; 
+
