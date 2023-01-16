@@ -3,12 +3,12 @@ import React, { createContext, useState } from "react";
 export const CartContext = createContext();
 
 const CartContextProvider = ({children}) => {
-    const [cart, setCart] = useState();
+    const [cart, setCart] = useState([]);
 
     const addItem = (item, quantity) => {
         if (isInCart(item.id)) {
             let pos = cart.findIndex(x => x.id === item.id);
-            cart[pos].quantity += quantity
+            cart[pos].quantity += quantity;
             setCart([...cart]);
         } else {
             setCart([...cart, {...item, quantity:quantity}]);
