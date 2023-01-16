@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
     
-    const ItemCount = ({initial, stock, onAdd}) => {
-        const[counter, setCounter] = useState(parseInt(initial));
+    const ItemCount = ({stock, onAdd}) => {
+        const[counter, setCounter] = useState(1);
+        const [itemStock, setItemStock] = useState(stock)
         const [vendido, setVendido] = useState(false)
     
         const sumarStock = () => {
-            if (counter < stock) {
+            if (counter < itemStock) {
                 setCounter(counter + 1);
             }
         }
@@ -20,14 +21,13 @@ import { Link } from "react-router-dom";
         const addToCart = (quantity) => {
             setVendido(true)
             setCounter(1)
-            
+            setItemStock(itemStock - quantity)
             onAdd(quantity)
         }
     
         useEffect(() => {
-            setCounter(parseInt(initial))
-        }, [initial])
-
+            setItemStock(stock)
+        }, [stock])
 
     return (
         <div className="container text-center"> 

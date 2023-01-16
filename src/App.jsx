@@ -9,12 +9,13 @@ import Ayuda from "./components/sections/Ayuda";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Cart from "./components/Cart/Cart";
+import CartContextProvider from "./components/context/CartContext"
 
 
 function App() {
   return (
-     
-      
+     <CartContextProvider>
+        <div>      
           <BrowserRouter>
               <NavBar/>
               <Routes>
@@ -31,10 +32,8 @@ function App() {
               </Routes>
               <Footer/>
           </BrowserRouter>
-         
-          
-        
-  
+        </div>
+      </CartContextProvider>        
   );
 }
 
