@@ -620,7 +620,7 @@ footer .logoWspFlotante .iconoFlotante {
   }
 }
 
-/* Detail */
+/* DETALLE */
 
 .container-detail {
   display: flex;
@@ -658,4 +658,28 @@ footer .logoWspFlotante .iconoFlotante {
 .btn {
   --bs-btn-hover-border-color: none;
   --bs-btn-border-color: none;
+}
+
+/* CARRITO */
+
+.container-table {
+  margin-bottom: 20px;
+}
+
+.titulo-cart {
+  text-align: center;
+  margin: 35px 0 30px 0;
+}
+
+.vaciar-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sumTotal-cart {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
