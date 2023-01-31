@@ -683,3 +683,11 @@ footer .logoWspFlotante .iconoFlotante {
   justify-content: center;
   text-align: center;
 }
+
+/* CHECKOUT */
+
+.form-orden, .table {
+  margin: 20px 20px 20px 0;
+}
+
+

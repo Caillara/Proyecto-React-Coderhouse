@@ -14,6 +14,9 @@ function Cart () {
                     <table class="table">
                         <thead>
                             <tr>
+                                <th><Link onClick={clear} className="btn btn-dark">Vaciar carrito</Link></th>
+                            </tr>
+                            <tr>
                                 <th scope="col">&nbsp;</th>
                                 <th scope="col" className="text-center">Producto</th>
                                 <th scope="col" className="text-center">Cantidad</th>
@@ -38,7 +41,7 @@ function Cart () {
                                 <td><b>Total:</b> ${sumTotal()}</td>
                             </tr>
                             <tr className="vaciar-cart"> 
-                                <td><Link onClick={clear} className="btn btn-dark">Vaciar carrito</Link></td>
+                                <td><Link to={"/checkout"} className="btn btn-dark">Finalizar compra</Link></td>
                             </tr>
                         </tbody>
                     </table>

@@ -10,6 +10,7 @@ import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Cart from "./components/Cart/Cart";
 import CartContextProvider from "./components/context/CartContext"
+import Checkout from "./components/Cart/Checkout";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                 <Route exact path={"/ayuda"} element={<Ayuda/>} />
                 <Route exact path={"/contacto"} element={<Contacto/>} />
                 <Route exact path={"/item/:id"} element={<ItemDetailContainer/>} />
+                <Route exact path={"/checkout"} element={<Checkout/>} />
 
                 <Route exact path={"*"} element={<Error404/>} />
               </Routes>
